@@ -10,7 +10,7 @@ const About = () => {
   <div className="max-w-[1920px] mx-auto relative py-[40px] sm:py-[70px] md:py-[100px] lg:py-[150px]">
   <Image className="absolute left-[2%] top-0 max-md:hidden" src={'/assets/image/ellipse_img.webp'} width={70} height={94} alt="ellips"/>
   <Image className="absolute right-[2%] bottom-[22%] max-lg:hidden" src={'/assets/image/ellipse_img.webp'} width={70} height={94} alt="ellips"/>
-        <div className="container px-3  mx-auto md:px-12 2xl:px-[108px] flex justify-between gap-[75px] items-center max-lg:flex-wrap-reverse">
+        <div className="container px-3  mx-auto md:px-12 2xl:px-[108px] flex justify-between gap-[32px] sm:gap-[75px] items-center max-lg:flex-wrap-reverse">
           <div className="lg:max-w-[544px] max-lg:w-full">
             <Image className="w-full"
               src={"/assets/image/about_img.webp"}
