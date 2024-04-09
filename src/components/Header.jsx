@@ -1,17 +1,19 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import CommonBtn from "./CommonBtn";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [Show, setShow] = useState(false);
+  useEffect(()=>{
   if (Show === true) {
     document.body.classList.add("max-lg:overflow-hidden");
   } else {
     document.body.classList.remove("max-lg:overflow-hidden");
   }
+});
   const moment = () => {
     setShow(!Show);
     setOpen(!isOpen);

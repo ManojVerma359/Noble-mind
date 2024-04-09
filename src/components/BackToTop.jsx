@@ -1,24 +1,21 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 
 function BackToTop() {
   const [backTop, setBackTop] = React.useState(false);
-//   useEffect(()=>{
-//   const moveToTop = () => {
-//     document.documentElement.scrollTop = 0;
-//   };
-// })
-useEffect(()=>{
+  const moveToTop = () => {
+    document.documentElement.scrollTop = 0;
+  };
+
   window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop > 100) {
       setBackTop(true);
     } else {
       setBackTop(false);
     }
-  })
-});
+  });
   return (
-    <div className="">
+    <div>
       {backTop ? (
         <button
           id="text"
