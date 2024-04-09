@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+.ff_exo2 {
+  font-family: "Exo 2", sans-serif !important;
+}
+.ff_outfit {
+  font-family: "Outfit", sans-serif !important;
+}
+.bg_btn {
+  background: linear-gradient(130.88deg, #a854e9 -9.14%, #4f91fc 283.16%);
+}
+.bg_btn:hover{
+  background: white !important;
+  }
+.swiper-pagination {
+  position: unset !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  opacity: 0.23 !important;
+  background: #a854e9 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px !important;
+  height: 8px !important;
+  opacity: 1 !important;
+  background: #a854e9 !important;
+  border-radius: 22px !important;
+}
+
+.swiper-slide-active div {
+  position: relative !important;
+  border-color: #a854e9 !important;
+}
+
+.swiper-slide-active div::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute !important;
+  background-color: #a854e9;
+  left: 0;
+  bottom: 0;
+}
+html,body{
+  scroll-behavior: smooth !important;
+  }
+  
+@media (min-width: 1024px) {
+  .bg_100 {
+    background-size: 100% 100%;
+  }
+}
