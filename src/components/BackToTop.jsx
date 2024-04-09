@@ -1,12 +1,12 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 function BackToTop() {
   const [backTop, setBackTop] = React.useState(false);
   const moveToTop = () => {
     document.documentElement.scrollTop = 0;
   };
-
+useEffect(()=>{
   window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop > 100) {
       setBackTop(true);
@@ -14,6 +14,7 @@ function BackToTop() {
       setBackTop(false);
     }
   });
+});
   return (
     <div>
       {backTop ? (

@@ -1,11 +1,13 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 const PreLoder = () => {
+    useEffect(()=>{
   setTimeout(() => {
     document.getElementById("preloder").classList.add("hidden");
     document.body.classList.remove("overflow-hidden");
   }, 4000);
+});
   return (
     <>
       <div
